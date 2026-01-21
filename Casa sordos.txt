@@ -1,0 +1,737 @@
+﻿Guía
+📘 GUÍA PARA ADAPTAR UNA CASA
+SIENDO PERSONA SORDA
+(Proyecto de vivienda accesible – España)
+1 - Principios básicos
+CAPÍTULO 1
+Principios básicos para adaptar tu casa sin ayuda técnica
+🎯 Objetivo de esta guía
+Esta guía está pensada para que una persona sorda pueda adaptar su propia casa, paso a paso, sin depender de técnicos, sin saber informática y sin gastar mucho dinero.
+Aquí aprenderás a:
+* Recibir avisos visuales en lugar de sonidos
+* Aumentar la seguridad en casa
+* Adaptar la vivienda poco a poco, según tu presupuesto
+* Elegir qué comprar y qué NO comprar
+________________
+
+
+1️⃣ ¿Qué problemas queremos resolver en una casa?
+Estas son las situaciones más importantes para una persona sorda:
+🔴 Seguridad (prioridad máxima)
+* Incendio / humo
+* Fuga de agua
+* Puertas abiertas
+🟠 Vida diaria
+* Timbre o portero
+* Lavadora/Lavavajillas terminada
+* Llanto de bebè
+________________
+
+
+2️⃣ La idea clave: usar las LUCES como lenguaje
+Las luces no solo sirven para iluminar.
+En esta guía, las usamos como lenguaje visual.
+👉 Cada color significa una cosa distinta.
+👉 Usar siempre los mismos colores evita confusión y estrés.
+Ejemplos:
+* 🔴 Rojo → peligro
+* 🔵 Azul → agua
+* 🟢 Verde → tarea terminada
+* 🟣 Violeta → bebé
+Este “lenguaje de luces” se mantiene igual en toda la casa.
+________________
+
+
+3️⃣ ¿Necesito ser informático? ❌ NO
+Esta guía está pensada para:
+* Personas que no saben programar
+* Personas que no quieren tocar cables
+* Personas que quieren “conectar y usar”
+Por eso:
+* Usamos dispositivos ya preparados
+* Usamos automatizaciones prehechas
+* Explicamos todo con pasos simples
+________________
+
+
+4️⃣ ¿Qué es Zigbee?
+Utilizaremos Zigbee para comunicarnos con todos los aparatos.
+Zigbee es un sistema de comunicación inalámbrica pensado para dispositivos de domótica como sensores, bombillas, enchufes y detectores.
+En pocas palabras:
+* 🔌 Bajo consumo → ideal para dispositivos a pilas (sensores duran meses o años).
+* 📡 Red en malla (mesh) → cada dispositivo conectado a la corriente repite la señal y hace la red más estable.
+* 🏠 Funciona en local → no necesita internet para funcionar.
+* 🔒 Fiable y rápido → muy usado en sistemas de seguridad y accesibilidad.
+* 🤝 Compatible entre marcas → muchos fabricantes distintos pueden trabajar juntos.
+________________
+
+
+5️⃣ Ventajas de adaptar tu casa tú mismo/a
+* 💰 Gastas menos dinero
+* 🔧 No dependes de técnicos
+* 🔒 Más privacidad
+* 🔄 Puedes cambiar cosas cuando quieras
+* 🧠 La casa se adapta a TI, no al revés
+
+
+
+
+1.1 - Consejos importantes
+🛒 Compra de los dispositivos
+Recomendamos fuertemente comprar los productos indicados en esta guía.
+Estos dispositivos han sido seleccionados porque:
+* Son fiables
+* Son compatibles entre sí
+* Han sido probados con estas automatizaciones
+⚠️ Importante
+Es posible usar otros dispositivos, pero en ese caso:
+* No podemos garantizar el mismo nivel de calidad
+* Las automatizaciones podrían no funcionar correctamente
+* El comportamiento del sistema puede no ser el esperado
+👉 Para evitar problemas, sigue la lista recomendada.
+________________
+
+
+💡 Luces (bombillas inteligentes)
+Las bombillas inteligentes deben tener corriente siempre.
+⚠️ Nunca apagues el interruptor de la pared.
+📍 Dónde instalarlas
+Recomendamos colocarlas en:
+* Lámparas de mesa
+* Lámparas auxiliares
+* Puntos de luz que no se apaguen manualmente
+La bombilla se encarga de todo:
+* En reposo: luminosidad al 0 %
+* En alerta: se enciende según la automatización
+________________
+
+
+👀 Posición de las luces (muy importante)
+Antes de instalar las bombillas, piensa:
+* Dónde pasas más tiempo
+* Hacia dónde sueles mirar en esa zona
+
+❌ Evita
+   * Colocar luces junto a ventanas
+   * Zonas con mucha luz natural directa
+
+✅ Prioriza
+      * Zonas visibles desde el sofá
+      * Zonas visibles desde la cama
+      * Espacios de uso habitual
+2 - Qué necesito comprar
+CAPÍTULO 2
+Qué necesito comprar (y qué NO) según mi casa
+________________
+
+
+❌ Detector de humo
+Este es el único dispositivo que NO se integra directamente en nuestro sistema.
+¿Por qué?
+      * Son dispositivos muy específicos
+      * Por normativa deben cumplir requisitos técnicos
+      * No deben modificarse ni integrarse en domótica
+👉 Por este motivo:
+      * Solo damos una sugerencia de compra
+      * No explicamos configuración
+      * La instalación va totalmente separada
+🛒 Sugerencia de compra
+      * Radiolink 170RF
+________________
+
+
+1️⃣ Necesìto internet?
+Para que todo el sistema funcione:
+      * ❌ NO es necesario tener internet
+      * ✅ SÍ es necesario tener un router
+El router sirve para crear una red local dentro de tu casa.
+💡 Importante
+Aunque no tengas internet contratado, necesitas un router.
+🛒 Opciones de router (sin internet)
+Si NO tienes ningún router:
+      * TP-Link TL-WR840N
+      * Alcance básico
+      * Configuración cerca del router
+      * Sin notificaciones móviles por toda la casa
+
+         * TP-Link Archer C6 - AC1200
+         * Mayor alcance Wi-Fi
+         * Permite notificaciones al móvil en toda la casa
+________________
+
+
+2️⃣ Qué SÍ necesitas comprar
+🧠 1. El “cerebro”
+         * Home assistant Green
+         * Home Assistant ZBT-2
+📡 2. Sensores o enchufes inteligentes
+Por lo menos uno, segùn lo que quieras automatizar.
+💡 3. Bombillas inteligentes (MUY importantes)
+⚠️ Deben ser RGB (colores)
+¿Por qué?
+         * Los colores son el lenguaje visual
+         * El blanco solo NO es suficiente
+Recomendadas
+         * Bombillas inteligentes RGB
+________________
+
+
+5️⃣ Ejemplo de compra REAL
+Si compraras TODO lo que està sugerido en esta guìa esto serìa el gasto (a enero 2026):
+         * 1 cerebro central (190€)
+         * 1 micro sd 64Gb (15€)
+         * 1 router basico (25€)
+         * 2 bombillas RGB (73€)
+         * 2 enchufes inteligentes (30€)
+         * 1 sensor de puerta o ventana (20€)
+         * 1 botòn inteligente/timbre (22€)
+         * 1 sensor de vibraciòn (22€)
+         * 1 sensor de agua (20€)
+         * 1 sensor de movimiento (23€)
+Total aproximado: 440€
+
+
+3 - Instalar el "cerebro"
+CAPÍTULO 3
+Cómo instalar el “cerebro” de la casa
+________________
+
+
+🔧 Material necesario
+ Image 
+
+Necesitas:
+         1. Home Assistant Green
+         2. Adaptador Zigbee (Home Assistant Connect ZBT-2)
+         3. Cable Ethernet
+         4. Router con Internet
+         5. Móvil u ordenador conectado a la misma red Wi-Fi
+________________
+
+
+🟢 PASO 1 – Conectar Home Assistant Green
+         1. Conecta el cable Ethernet del router al Home Assistant Green.
+         2. Conecta el cable de alimentación.
+         3. Espera 2–3 minutos hasta que arranque.
+👉 No hay botones. Se enciende automáticamente.
+________________
+
+
+🌐 PASO 2 – Entrar en Home Assistant por primera vez
+
+
+Descárgate la app de Home Assistant o en el navegador de tu mòvil o de tu ordenador escribe:
+http://homeassistant.local:8123
+         1. (si no funciona, luego te explico alternativa)
+         2. Aparecerá la pantalla de bienvenida.
+         3. Crea:
+         * Nombre de usuario
+         * Contraseña
+         4. Elige:
+         * Idioma: Español
+         * País: España
+         5. Acepta y continúa.
+✅ Home Assistant ya está funcionando.
+________________
+
+
+🔌 PASO 3 – Conectar el adaptador Zigbee
+         1. Inserta el adaptador Zigbee en un puerto USB del Home Assistant Green.
+         2. Espera 30 segundos.
+________________
+
+
+🧩 PASO 4 – Instalar Zigbee (ZHA)
+         1. En Home Assistant:
+         * ⚙️ Ajustes
+         * Dispositivos y servicios
+         2. Debería detectarse solo (“discovered”).
+         3. En la tarjeta de Connect ZBT-2, pulsa Añadir.
+         4. El asistente te pide elegir el protocolo: en nuestro caso, “Use as Zigbee adapter”.
+         5. Te pide tipo de instalación:
+         * Recommended installation: configura Zigbee con Zigbee Home Automation (ZHA) automáticamente.
+✅ Zigbee ya está listo.
+________________
+
+
+❗ Problemas comunes (rápido)
+No entra en homeassistant.local:8123
+         * Usa la IP del router (ej. 192.168.1.50:8123)
+La IP del router (también llamada puerta de enlace o gateway) se puede obtener de estas formas desde el mòvil:
+Android
+         1. Ve a Ajustes → Wi-Fi
+         2. Toca la red a la que estás conectado
+         3. Busca Puerta de enlace o Gateway
+ 👉 Suele ser algo como 192.168.1.1 o 192.168.0.1
+
+iPhone (iOS)
+            1. Ajustes → Wi-Fi
+            2. Toca el icono ⓘ de tu red
+            3. Mira el campo Router
+
+
+3.1 - Copia seguridad (opcional)
+Copia de seguridad (opcional pero muy recomendable)
+💾 ¿Para qué sirve la copia de seguridad?
+Sirve para no tener que configurar todo desde cero si ocurre algo de esto:
+            * Home Assistant Green se estropea
+            * Lo sustituyes por otro dispositivo
+            * Cambias algún componente importante
+🧩 Recomendación principal
+Para mantener el sistema:
+            * Simple
+            * Fiable
+            * Sin depender de internet
+👉 Recomendamos usar una tarjeta microSD local.
+☁️ Alternativa: copia de seguridad en Google Drive
+También explicamos la opción de Google Drive, pensada para quienes:
+            * Sí tienen internet
+            * Quieren una copia adicional en la nube
+👉 Ambas opciones son compatibles, pero no es obligatorio usar las dos.
+
+
+3.1a - Micro SD local (recomenado)
+Copias de seguridad locales en microSD (recomendado)
+✅ Qué microSD comprar (muy importante)
+🛒 Recomendación segura
+            * Sandisk Extreme U3 64Gb
+Por qué:
+            * Más duradera
+            * Menor riesgo de corrupción
+            * Ideal para dispositivos siempre encendidos
+________________
+
+
+🟢 PASO 1 — Insertar la microSD
+Qué hacer:
+            1. Apaga Home Assistant correctamente:
+            * ⚙️ Ajustes → Sistema → Apagar
+            2. Inserta la microSD en la ranura del Green
+            3. Conecta de nuevo la corriente
+            4. Espera 2–3 minutos
+________________
+
+
+🟢 PASO 2 — Preparar la microSD (solo una vez)
+Qué hacer:
+            1. Entra en:
+            * ⚙️ Ajustes → Sistema → Almacenamiento
+            2. Deberías ver:
+            * Almacenamiento externo (microSD)
+            3. Si aparece como “no preparada”:
+            * Pulsa Formatear / Montar
+            * Acepta
+⚠️ Se borra cualquier contenido previo.
+________________
+
+
+🟢 PASO 3 — Activar copias automáticas
+Qué hacer:
+            1. Entra en:
+            * ⚙️ Ajustes → Sistema → Copias de seguridad
+            2. Pulsa Configuración y activa:
+            * Copias automáticas
+            * Frecuencia: diaria
+            * Tipo: copia completa
+            * Mantener: 7 copias
+            3. Crea una copia manual de prueba:
+            * ➕ Crear copia de seguridad
+            * Tipo: copia completa
+✅ Si termina sin errores, todo está correcto.
+________________
+
+
+🔄 Restaurar Home Assistant desde la microSD
+Escenario: dispositivo nuevo o averiado
+Qué hacer:
+            1. Inserta la microSD antes de encender
+            2. Inicia Home Assistant
+            3. En el asistente inicial:
+            * Restaurar desde copia de seguridad
+            * Origen: almacenamiento local
+            * Elige el backup más reciente
+⏳ Espera unos minutos.
+🎉 Casa restaurada.
+3.1b - Google Drive nube (opcional)
+Copias de seguridad en Google Drive (opcional)
+________________
+
+
+🟢 PASO 1 — Comprobar que puedes instalar complementos
+Qué hacer:
+            1. En Home Assistant entra en:
+            * Ajustes → Complementos
+            2. Si ves “Tienda de complementos”, puedes continuar.
+________________
+
+
+🟢 PASO 2 — Instalar el complemento “Google Drive Backup”
+Qué hacer:
+            1. Entra en:
+            * Ajustes → Complementos → Tienda de complementos
+            2. Busca:
+            * Google Drive Backup
+            3. Entra y pulsa Instalar
+❗ Si no aparece en la tienda
+            1. En la tienda, pulsa los tres puntos (⋮)
+            2. Entra en Repositorios
+            3. Añade este repositorio:
+            * https://github.com/sabeechen/hassio-google-drive-backup
+            4. Vuelve a la tienda y busca de nuevo el complemento.
+________________
+
+
+🟢 PASO 3 — Configurar el complemento
+Qué hacer:
+            1. Entra en:
+            * Ajustes → Complementos → Google Drive Backup
+            2. Activa:
+            * Iniciar al arrancar
+            * Watchdog
+            * Mostrar en la barra lateral (opcional)
+            3. Pulsa Iniciar
+________________
+
+
+🟢 PASO 4 — Conectar con tu cuenta de Google
+Qué hacer:
+            1. Dentro del complemento, abre Web UI
+            2. Inicia sesión con tu cuenta de Google
+            3. Acepta los permisos
+Cuando termine, verás que la cuenta está conectada.
+________________
+
+
+🟢 PASO 5 — Activar copias automáticas
+Qué hacer:
+            1. En la interfaz del complemento, configura:
+            * Frecuencia: diaria
+            * Tipo de copia: completa
+            * Número de copias: 7
+            * Subir automáticamente a Drive: activado
+            2. Pulsa Guardar
+________________
+
+
+🟢 PASO 6 — Crear una copia de prueba
+Qué hacer:
+            1. Entra en:
+            * Ajustes → Sistema → Copias de seguridad
+            2. Pulsa Crear copia de seguridad
+            3. Elige Copia completa
+            4. Créala
+Comprobación:
+            * En el complemento debe aparecer como “Uploaded”
+            * En Google Drive verás la carpeta de copias
+________________
+🔄 Restaurar Home Assistant desde Google Drive
+________________
+
+
+Escenario 1 — Home Assistant nuevo o recién instalado
+Qué hacer:
+            1. Enciende el Home Assistant Green
+            2. Entra en:
+            * http://homeassistant.local:8123
+            3. En el asistente inicial, elige:
+            * Restaurar desde copia de seguridad
+            4. Selecciona Google Drive
+            5. Elige el backup más reciente
+            6. Confirma la restauración
+Espera unos minutos hasta que se reinicie.
+________________
+
+
+Escenario 2 — Google Drive no aparece (muy habitual)
+Este método funciona casi siempre.
+PASO A — Instalación mínima
+            * Crea un usuario temporal
+            * Entra al sistema
+PASO B — Instalar el complemento
+            * Repite los pasos de instalación del complemento Google Drive Backup
+PASO C — Descargar el backup
+            * En el complemento, selecciona el backup
+            * Pulsa Download
+PASO D — Restaurar
+            1. Ajustes → Sistema → Copias de seguridad
+            2. Elige la copia descargada
+            3. Pulsa Restaurar
+            4. Selecciona restauración completa
+            5. Confirma
+3.1c - Nota sobre dongle Zigbee
+🧩 Nota importante sobre Zigbee
+            * Mismo dongle Zigbee → no hay que hacer nada
+            * Dongle distinto:
+            * ⚙️ Ajustes → Dispositivos y servicios → Zigbee
+            * Reconfigurar puerto
+4 - Instalar sensores y bombillas
+CAPÍTULO 4
+Cómo instalar sensores y bombillas
+________________
+
+
+1️⃣ Añadir un sensor (ejemplo: sensor de agua)
+Qué hacer
+            1. En la pantalla, pulsa Añadir dispositivo
+            2. Elige Zigbee
+            3. Pulsa el botón del sensor (normalmente 5 segundos)
+            4. Espera a que aparezca
+            5. Ponle un nombre claro
+👉 ejemplo: Sensor agua cocina
+________________
+
+
+2️⃣ Añadir una bombilla inteligente 💡
+Qué hacer
+               1. Coloca la bombilla en una lámpara
+               2. Enciéndela y apágala varias veces (según marca)
+               3. Pulsa Añadir dispositivo
+               4. Espera a que aparezca
+               5. Nómbrala
+👉 ejemplo: Luz salón aviso
+⚠️ Debe ser RGB (de colores)
+________________
+
+
+4️⃣ Prueba que TODO responde
+Antes de seguir:
+                  * Enciende y apaga una luz desde la pantalla
+                  * Cambia el color
+                  * Activa un sensor (agua, puerta…)
+Si algo no responde:
+                  * Revisa batería
+                  * Repite el emparejado
+                  * Acércalo al “cerebro”
+________________
+
+
+5️⃣ No hemos hecho todavía automatizaciones
+⚠️ Importante:
+                  * Todavía NO hay avisos automáticos
+                  * Todo esto es sólo preparación
+Eso viene en el próximo capítulo.
+________________
+
+
+6️⃣ Errores normales (tranquilo, es habitual)
+❌ “No aparece el sensor” → repetir botón
+❌ “La luz no cambia de color” → no es RGB
+❌ “Va lento” → espera unos segundos
+5 - Automatizar
+Apartado común — Instalación y configuración básica de los blueprints
+🧩 Qué es un blueprint
+Un blueprint es:
+                  * una automatización ya hecha
+                  * creada específicamente para esta guía
+                  * pensada para no tocar código
+Tú solo tienes que:
+                  * importarla una vez
+                  * rellenar algunos campos
+                  * guardar
+________________
+
+
+📦 Apartado común
+Instalación y configuración básica de los blueprints
+Este apartado es igual para todas las automatizaciones del proyecto.
+👉 Léelo una sola vez.
+Después puedes ir directamente a la automatización que te interese.
+________________
+
+
+1️⃣ Importar un blueprint desde un enlace
+Cada automatización tiene su propio enlace.
+Ese enlace se importa una sola vez.
+Qué hacer:
+                  1. En Home Assistant entra en:
+                  * Ajustes → Automatizaciones y escenas
+                  2. Arriba a la derecha, pulsa: Blueprints (o Proyectos)
+                  3. Pulsa: Importar blueprint / proyecto
+                  4. Pega el enlace del blueprint
+                  5. Pulsa Importar
+Resultado:
+                  * el blueprint queda guardado
+                  * ⚠️ todavía NO se crea ninguna automatización
+________________
+
+
+2️⃣ Crear una automatización desde un blueprint
+Esto es lo que se hace cada vez que quieras usar un aviso.
+Qué hacer:
+                  1. Entra en:
+                  * Ajustes → Automatizaciones y escenas
+                  2. Asegúrate de estar en la pestaña: Automatizaciones
+                  3. Abajo a la derecha pulsa: Crear automatización
+                  4. Elige: Crear desde un blueprint
+                  5. Selecciona el blueprint correspondiente
+                  6. Rellena los campos
+                  7. Guarda
+La automatización queda activa inmediatamente.
+________________
+
+
+🔧 Campos que SIEMPRE aparecen en los blueprints
+Todos los blueprints de este proyecto siguen exactamente la misma lógica.
+________________
+
+
+1. Sensor (el detector)
+Es el dispositivo que dispara el aviso.
+Ejemplos:
+                  * sensor de agua
+                  * sensor de puerta
+                  * sensor de movimiento
+                  * enchufe con consumo
+________________
+
+
+2. Luces afectadas (aviso visual)
+Son las luces que:
+                  * parpadean
+                  * cambian de color
+                  * se encienden de forma fija
+Puedes elegir:
+                  * una sola luz
+                  * varias luces
+                  * todas las luces de una habitación
+No hay que tocar colores ni tiempos. Eso ya viene configurado.
+________________
+
+
+3. Notificación al móvil (opcional)
+Sirve para que el aviso llegue también al teléfono.
+Características:
+                  * puedes elegir uno o varios móviles
+                  * se buscan como mobile_app_...
+                  * requiere la app oficial de Home Assistant
+Aunque las luces tengan prioridades distintas, la notificación siempre se envía.
+________________
+
+
+📋 Automatizaciones disponibles en el proyecto
+A continuación se explica cada automatización de forma clara, para que puedas ir directamente a la que necesitas.
+________________
+
+
+🧺 Lavadora
+Qué hace:
+                  * Detecta cuándo la lavadora empieza (por consumo eléctrico)
+                  * Espera a que termine
+Aviso:
+                  * notificación al móvil
+                  * luz verde fija durante 5 minutos
+Qué necesitas:
+                  * Enchufe inteligente con medición de consumo
+Enlace del Blueprint: https://github.com/Franz-89/ha-blueprints-casa-sordos/blob/main/washing_machine.yaml
+________________
+
+
+🍽️ Lavavajillas
+Qué hace:
+                  * Detecta el ciclo completo del lavavajillas
+                  * Avisa cuando termina
+Aviso:
+                  * notificación al móvil
+                  * luz verde fija durante 5 minutos
+Qué necesitas:
+                  * Enchufe inteligente con medición de consumo
+Enlace del Blueprint: https://github.com/Franz-89/ha-blueprints-casa-sordos/blob/main/dishwasher.yaml
+________________
+
+
+🚪 Puerta abierta
+Qué hace:
+                  * detecta una puerta abierta durante más de 5 minutos
+                  * avisa si se queda abierta
+Aviso:
+                  * notificación al móvil
+                  * parpadeo rojo durante 30 segundos
+Qué necesitas:
+                  * Sensor de puerta o ventana
+Enlace del Blueprint: https://github.com/Franz-89/ha-blueprints-casa-sordos/blob/main/open_door.yaml
+________________
+
+
+🔔 Timbre
+Qué hace:
+                  * detecta cuando alguien toca el timbre
+Aviso:
+                  * notificación inmediata al móvil
+                  * parpadeo blanco cálido durante 30 segundos
+Qué necesitas:
+                  * Sensor que détecte el timbre
+Enlace del Blueprint: https://github.com/Franz-89/ha-blueprints-casa-sordos/blob/main/doorbell.yaml
+________________
+
+
+📞 Telefonillo / portero automático
+Qué hace:
+                  * detecta cuando llaman al telefonillo
+Aviso:
+                  * notificación inmediata al móvil
+                  * parpadeo blanco frío durante 30 segundos
+Qué necesitas:
+                  * Sensor conectado al telefonillo
+Enlace del Blueprint: https://github.com/Franz-89/ha-blueprints-casa-sordos/blob/main/intercom.yaml
+________________
+
+
+💧 Fuga de agua
+Qué hace:
+                  * detecta la presencia de agua en el suelo
+Aviso:
+                  * notificación inmediata al móvil
+                  * parpadeo azul durante 30 segundos
+Qué necesitas:
+                  * Sensor de fuga de agua
+Enlace del Blueprint: https://github.com/Franz-89/ha-blueprints-casa-sordos/blob/main/water_leak.yaml
+________________
+
+
+👶 Bebé llorando / actividad en la cuna
+Actualmente no existen sensores de sonido Zigbee fiables y fácilmente disponibles en España.
+Por este motivo, la opción recomendada es usar un sensor de movimiento colocado cerca de la cuna, ya que el bebé suele moverse cuando llora. Esta solución es estable, local y compatible con Home Assistant Green.
+En el futuro, si aparecen sensores de sonido fiables en el mercado español, el sistema podrá ampliarse sin cambiar la lógica de las automatizaciones.
+
+Qué hace:
+                  * detecta movimiento continuo en la zona de la cuna (màs de 2 segundos)
+                  * interpreta ese movimiento como actividad o llanto
+Aviso:
+                  * notificación inmediata al móvil
+                  * parpadeo violeta:
+                  * de 09:00 a 20:00 → 10 segundos
+                  * de 20:00 a 09:00 → 1 minuto completo
+Qué necesitas:
+                  * Sensor de movimiento en la habitación del bebé (enfocado a la cuna o a la zona donde duerme)
+Enlace del Blueprint: https://github.com/Franz-89/ha-blueprints-casa-sordos/blob/main/crying_baby.yaml
+Nabu Casa (opcional)
+☁️ ¿Qué es Nabu Casa?
+Nabu Casa es el servicio oficial en la nube de Home Assistant.
+Es completamente opcional.
+Este proyecto funciona sin Nabu Casa y sin internet.
+________________
+
+
+✅ Ventajas de Nabu Casa
+                  * acceso remoto seguro sin configuraciones técnicas
+                  * integración sencilla con asistentes de voz
+                  * notificaciones desde fuera de casa
+________________
+
+
+❌ NO es necesario para este proyecto
+                  * ❌ No es obligatorio ni necesario
+                  * ❌ No es necesario para que las automatizaciones funcionen
+                  * ❌ Inùtil si no hay internet
+La casa seguirá funcionando:
+                  * Con luces
+                  * Sensores
+                  * Alertas visuales
+                  * Automatizaciones locales aunque Nabu Casa esté desactivado.
+________________
+
+
+💶 Coste aproximado
+                  * Suscripción mensual o anual
+                  * Precio moderado (suele rondar 5–8 € al mes)
+                  * Se puede activar o cancelar en cualquier momento

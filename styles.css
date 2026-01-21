@@ -1,0 +1,279 @@
+:root {
+    /* Brand & Accessibility Colors */
+    --color-bg: #f8f9fa;
+    --color-text: #2c3e50;
+    --color-primary: #34495e;
+    --color-accent: #16a085;
+    --color-border: #e9ecef;
+    --color-white: #ffffff;
+    
+    /* Semantic Light Colors for the Guide */
+    --light-red: #e74c3c;    /* Danger/Fire */
+    --light-blue: #3498db;   /* Water */
+    --light-green: #2ecc71;  /* Task Done */
+    --light-violet: #9b59b6; /* Baby */
+    --light-yellow: #f1c40f;  /* Warm White / Bell (using yellow for visibility on white) */
+    --light-white: #dee2e6;
+
+    /* Spacing */
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 4rem;
+
+    /* Braids */
+    --radius: 12px;
+    --shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    margin: 0;
+    padding: 0;
+}
+
+/* Layout */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: var(--spacing-lg);
+    background: var(--color-white);
+    min-height: 100vh;
+    box-shadow: 0 0 20px rgba(0,0,0,0.03);
+}
+
+/* Header & Nav */
+header {
+    margin-bottom: var(--spacing-xl);
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    font-weight: 300;
+}
+
+nav.main-nav {
+    margin: var(--spacing-lg) 0;
+    padding: var(--spacing-md) 0;
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+}
+
+nav.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-md);
+}
+
+nav.main-nav a {
+    text-decoration: none;
+    color: var(--color-primary);
+    font-weight: 500;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--radius);
+    transition: background 0.2s;
+}
+
+nav.main-nav a:hover, nav.main-nav a.active {
+    background-color: var(--color-bg);
+    color: var(--color-accent);
+}
+
+/* Images */
+.hero-image, .step-image {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius);
+    margin-bottom: var(--spacing-lg);
+    display: block;
+}
+
+/* Typography & Content */
+h2 {
+    color: var(--color-primary);
+    border-bottom: 2px solid var(--color-accent);
+    padding-bottom: var(--spacing-sm);
+    margin-top: var(--spacing-xl);
+}
+
+h3 {
+    margin-top: var(--spacing-lg);
+    color: var(--color-primary);
+}
+
+ul {
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: var(--spacing-sm);
+}
+
+.info {
+    background: #e1f6ff;
+    border-left: 4px solid #00b8d4;
+    padding: var(--spacing-md);
+    margin: var(--spacing-md) 0;
+    border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+.success {
+    background: #e3ffe1;
+    border-left: 4px solid #2ecc71;
+    padding: var(--spacing-md);
+    margin: var(--spacing-md) 0;
+    border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+.warning {
+    background: #fff8e1;
+    border-left: 4px solid #ffc107;
+    padding: var(--spacing-md);
+    margin: var(--spacing-md) 0;
+    border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+.danger {
+    background: #ffebee;
+    border-left: 4px solid #f44336;
+    padding: var(--spacing-md);
+    margin: var(--spacing-md) 0;
+    border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+/* Wizard */
+.wizard-container {
+    position: relative;
+    padding: var(--spacing-md);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    background: var(--color-white);
+    margin-top: var(--spacing-lg);
+}
+
+.wizard-step {
+    display: none; /* Hidden by default */
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.wizard-step.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.wizard-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: var(--spacing-lg);
+    padding-top: var(--spacing-md);
+    border-top: 1px solid var(--color-border);
+}
+
+.btn {
+    background-color: var(--color-accent);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: var(--radius);
+    cursor: pointer;
+    font-size: 1rem;
+    transition: transform 0.1s, background 0.2s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #148f77;
+    transform: translateY(-1px);
+}
+
+.btn:active {
+    transform: translateY(1px);
+}
+
+.btn-secondary {
+    background-color: #95a5a6;
+}
+
+.btn-copy {
+    background-color: var(--color-primary);
+    font-size: 0.9rem;
+    padding: 8px 16px;
+    margin-left: var(--spacing-sm);
+}
+
+/* Color Cards (For Printing) */
+.color-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+}
+
+.color-card {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: var(--spacing-lg);
+    text-align: center;
+    background: white;
+}
+
+.color-swatch {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto var(--spacing-md);
+    border: 4px solid rgba(0,0,0,0.1);
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background: white;
+    }
+    .container {
+        box-shadow: none;
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    nav.main-nav, .wizard-controls, .btn, .no-print {
+        display: none !important;
+    }
+    .wizard-step {
+        display: block !important; /* Show all steps when printing */
+        border-bottom: 1px solid #ccc;
+        page-break-inside: avoid;
+        margin-bottom: 2rem;
+    }
+    .hero-image {
+        max-height: 200px;
+        object-fit: cover;
+    }
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Códigos de Colores | Guía Casa Accesible</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="html2canvas.min.js"></script>
+    <style>
+        @media print {
+
+            .btn-print,
+            #downloadBtn {
+                display: none;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+                text-align: center;
+            }
+
+            .color-grid {
+                gap: 1rem;
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            body {
+                font-size: 12pt;
+            }
+
+            .subtitle {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <nav class="main-nav no-print">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="chapter1.html">1. Principios</a></li>
+                <li><a href="chapter2.html">2. Compras</a></li>
+                <li><a href="chapter3.html">3. Cerebro</a></li>
+                <li><a href="chapter4.html">4. Sensores</a></li>
+                <li><a href="chapter5.html">5. Automatizar</a></li>
+                <li><a href="backups.html">💾 Backups</a></li>
+                <li><a href="nabu.html">☁️ NabuCasa</a></li>
+                <li><a href="colors.html" class="active">🎨 Colores</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <header>
+                <h1>🎨 Código de Colores</h1>
+                <p class="subtitle">Guía visual de referencia rápida</p>
+                <button id="downloadBtn" class="btn btn-print" style="margin-top: 1rem;">⬇️ Descargar</button>
+            </header>
+
+            <section class="color-grid">
+                <!-- RED -->
+                <div class="color-card">
+                    <div class="color-swatch" style="background-color: var(--light-red);"></div>
+                    <h3>ROJO</h3>
+                    <p><strong>PELIGRO / ALERTA</strong></p>
+                    <ul style="list-style: none; padding: 0;">
+                        <li>Puerta abierta</li>
+                        <li>Alarma</li>
+                    </ul>
+                </div>
+
+                <!-- BLUE -->
+                <div class="color-card">
+                    <div class="color-swatch" style="background-color: var(--light-blue);"></div>
+                    <h3>AZUL</h3>
+                    <p><strong>AGUA</strong></p>
+                    <ul style="list-style: none; padding: 0;">
+                        <li>Fuga de agua</li>
+                        <li>Inundación</li>
+                    </ul>
+                </div>
+
+                <!-- GREEN -->
+                <div class="color-card">
+                    <div class="color-swatch" style="background-color: var(--light-green);"></div>
+                    <h3>VERDE</h3>
+                    <p><strong>INFORMACIÓN</strong></p>
+                    <ul style="list-style: none; padding: 0;">
+                        <li>Lavadora terminada</li>
+                        <li>Lavavajillas terminado</li>
+                        <li>Tarea OK</li>
+                    </ul>
+                </div>
+
+                <!-- VIOLET -->
+                <div class="color-card">
+                    <div class="color-swatch" style="background-color: var(--light-violet);"></div>
+                    <h3>VIOLETA</h3>
+                    <p><strong>BEBÉ / CUIDADOS</strong></p>
+                    <ul style="list-style: none; padding: 0;">
+                        <li>Llanto en la cuna</li>
+                        <li>Movimiento bebé</li>
+                    </ul>
+                </div>
+
+                <!-- YELLOW -->
+                <div class="color-card">
+                    <div class="color-swatch" style="background-color: var(--light-yellow);"></div>
+                    <h3>AMARILLO</h3>
+                    <p><strong>COMUNICACIÓN</strong></p>
+                    <ul style="list-style: none; padding: 0;">
+                        <li>Timbre de la puerta</li>
+                    </ul>
+                </div>
+
+                <!-- WHITE -->
+                <div class="color-card">
+                    <div class="color-swatch" style="background-color: var(--light-white);"></div>
+                    <h3>BLANCO</h3>
+                    <p><strong>COMUNICACIÓN</strong></p>
+                    <ul style="list-style: none; padding: 0;">
+                        <li>Telefonillo</li>
+                    </ul>
+                </div>
+            </section>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="index.html" class="btn">Volver al Inicio</a>
+            </div>
+
+        </main>
+
+        <footer style="margin-top: 4rem; text-align: center; color: #95a5a6; font-size: 0.9rem;">
+            <p>Proyecto de vivienda accesible – España
+                <script>document.write(new Date().getFullYear());</script>
+            </p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

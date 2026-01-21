@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 1 - Principios | Guía Casa Accesible</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="chapter1.html" class="active">1. Principios</a></li>
+                <li><a href="chapter2.html">2. Compras</a></li>
+                <li><a href="chapter3.html">3. Cerebro</a></li>
+                <li><a href="chapter4.html">4. Sensores</a></li>
+                <li><a href="chapter5.html">5. Automatizar</a></li>
+                <li><a href="backups.html">💾 Backups</a></li>
+                <li><a href="nabu.html">☁️ NabuCasa</a></li>
+                <li><a href="colors.html">🎨 Colores</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <header>
+                <h1>1. Principios básicos</h1>
+                <p class="subtitle">Para adaptar tu casa sin ayuda técnica</p>
+            </header>
+
+            <section>
+                <h2>1️⃣ ¿Qué problemas queremos resolver?</h2>
+                <p>Las situaciones más urgentes para una persona sorda:</p>
+
+                <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1rem;">
+                    <div class="danger" style="flex: 1; min-width: 250px;">
+                        <strong>Seguridad (Prioridad)</strong>
+                        <ul>
+                            <li>Fuga de agua</li>
+                            <li>Puertas abiertas</li>
+                        </ul>
+                    </div>
+                    <div class="warning" style="flex: 1; min-width: 250px;">
+                        <strong>Vida diaria</strong>
+                        <ul>
+                            <li>Timbre o portero</li>
+                            <li>Lavadora / Lavavajillas</li>
+                            <li>Llanto de bebé</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>2️⃣ La idea clave: LUCES como lenguaje</h2>
+                <p>Las luces no solo iluminan. Aquí son nuestro sistema de comunicación.</p>
+                <p><strong>Regla de oro:</strong> Cada color significa una cosa distinta.</p>
+
+                <ul class="color-list" style="list-style: none; padding: 0;">
+                    <li style="border-left: 5px solid var(--light-red); padding-left: 10px; margin-bottom: 10px;">
+                        <strong>🔴 Rojo:</strong> Peligro (puerta abierta, humo...)
+                    </li>
+
+                    <li style="border-left: 5px solid var(--light-blue); padding-left: 10px; margin-bottom: 10px;">
+                        <strong>🔵 Azul:</strong> Agua (fugas)
+                    </li>
+
+                    <li style="border-left: 5px solid var(--light-green); padding-left: 10px; margin-bottom: 10px;">
+                        <strong>🟢 Verde:</strong> Tarea terminada (lavadora, lavavajillas)
+                    </li>
+
+                    <li style="border-left: 5px solid var(--light-violet); padding-left: 10px; margin-bottom: 10px;">
+                        <strong>🟣 Violeta:</strong> Bebé
+                    </li>
+
+                    <li style="border-left: 5px solid var(--light-yellow); padding-left: 10px; margin-bottom: 10px;">
+                        <strong>🟡 Amarillo:</strong> Timbre
+                    </li>
+
+                    <li style="border-left: 5px solid var(--light-white); padding-left: 10px; margin-bottom: 10px;">
+                        <strong>⚪ Blanco:</strong> Telefonillo
+                    </li>
+                </ul>
+
+
+                <p><a href="colors.html" class="btn btn-secondary" style="font-size: 0.9rem;">Ver guía de colores
+                        completa →</a></p>
+            </section>
+
+            <section>
+                <h2>3️⃣ ¿Qué es Zigbee?</h2>
+                <p>Usaremos <strong>Zigbee</strong> para conectar todo. Es el sistema ideal porque:</p>
+                <p>Zigbee es un <strong>sistema de comunicación inalámbrica</strong> pensado para dispositivos de
+                    domótica como sensores, bombillas,
+                    enchufes y detectores.</p>
+                <ul>
+                    <li>🔌 <strong>Bajo consumo:</strong> Las pilas duran años.</li>
+                    <li>📡 <strong>Red en malla:</strong> Cuantos más dispositivos, mejor funciona.</li>
+                    <li>🏠 <strong>Local:</strong> Funciona sin internet.</li>
+                    <li>🤝 <strong>Compatible:</strong> Funciona con muchas marcas.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>4️⃣ Consejos importantes</h2>
+                <div class="danger">
+                    <h3>⚠️ Bombillas Inteligentes</h3>
+                    <p>Las bombillas inteligentes <strong>deben tener corriente siempre</strong>. Nunca apagues el
+                        interruptor de la pared. La bombilla se 'apaga' via software (luminosidad 0%), pero sigue
+                        conectada esperando avisos.</p>
+                </div>
+
+                <h3>Posición de las luces</h3>
+                <p>Piensa estratégicamente:</p>
+                <ul>
+                    <li>✅ <strong>SÍ:</strong> Visibles desde el sofá o la cama.</li>
+                    <li>❌ <strong>NO:</strong> Junto a ventanas o donde haya mucha luz solar directa (no se verán bien
+                        los colores).</li>
+                </ul>
+            </section>
+
+            <div class="wizard-controls">
+                <a href="index.html" class="btn btn-secondary">← Inicio</a>
+                <a href="chapter2.html" class="btn">Siguiente: Compras →</a>
+            </div>
+        </main>
+
+        <footer style="margin-top: 4rem; text-align: center; color: #95a5a6; font-size: 0.9rem;">
+            <p>Proyecto de vivienda accesible – España
+                <script>document.write(new Date().getFullYear());</script>
+            </p>
+        </footer>
+    </div>
+
+</body>
+
+</html>

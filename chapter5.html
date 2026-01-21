@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 5 - Automatizar | Guía Casa Accesible</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="chapter1.html">1. Principios</a></li>
+                <li><a href="chapter2.html">2. Compras</a></li>
+                <li><a href="chapter3.html">3. Cerebro</a></li>
+                <li><a href="chapter4.html">4. Sensores</a></li>
+                <li><a href="chapter5.html" class="active">5. Automatizar</a></li>
+                <li><a href="backups.html">💾 Backups</a></li>
+                <li><a href="nabu.html">☁️ NabuCasa</a></li>
+                <li><a href="colors.html">🎨 Colores</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <header>
+                <h1>5. Automatizaciones (Blueprints)</h1>
+                <p class="subtitle">La magia de la casa</p>
+            </header>
+
+            <section class="intro">
+                <h2>¿Qué es un blueprint?</h2>
+                <p>Es una "receta" ya preparada para que no tengas que programar. Solo tienes que copiar el enlace e
+                    importarlo en tu Home Assistant.</p>
+            </section>
+
+            <section>
+                <h2>Cómo Importar</h2>
+                <ol>
+                    <li>Copia el enlace de abajo (botón "Blueprint").</li>
+                    <li>En Home Assistant: <strong>Ajustes → Automatizaciones y escenas</strong> → Pestaña
+                        <strong>Blueprints / Proyectos</strong>.
+                    </li>
+                    <li>Pulsa <strong>Importar Blueprint / Proyecto</strong> y pega el enlace.</li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>Crear una automatización desde un blueprint</h2>
+                <ol>
+                    <li>Entra en <strong>Ajustes → Automatizaciones y escenas</strong> → Pestaña
+                        <strong>Automatizaciones</strong>.
+                    </li>
+                    <li>Pulsa <strong>Crear automatización</strong> (abajo a la derecha).</li>
+                    <li>Selecciona <strong>Crear desde un blueprint</strong> y elige el blueprint correspondiente.</li>
+                    <li>Rellena los campos necesarios y <strong>guarda</strong>.</li>
+                </ol>
+                <p>La automatización queda activa inmediatamente.</p>
+            </section>
+
+
+            <section class="blueprint-list">
+                <h2>📋 Lista de Automatizaciones</h2>
+
+                <!-- Open Door -->
+                <article class="blueprint-card"
+                    style="border: 1px solid var(--color-border); padding: 1.5rem; border-radius: 12px; margin-bottom: 2rem; background: #fff;">
+                    <div style="display: flex; justify-content: space-between; align-items: start;">
+                        <h3 style="margin-top: 0; display: flex; align-items: center; gap: 0.5rem;">
+                            <span
+                                style="background: var(--light-red); width: 20px; height: 20px; border-radius: 50%; display: inline-block;"></span>
+                            🚪 Puerta Abierta
+                        </h3>
+                        <button class="btn btn-copy"
+                            data-copy="https://github.com/Franz-89/ha-blueprints-casa-sordos/blob/main/open_door.yaml">🔗
+                            Blueprint</button>
+                    </div>
+                    <p><strong>Que hace:</strong> Detecta si lleva abierta más de 5 min.</p>
+                    <p><strong>Aviso:</strong> Parpadeo ROJO (30 seg) + Notificación.</p>
+                    <p><strong>Requiere:</strong> Sensor de puerta/ventana.</p>
+                    <p><strong>Sugerencia de compra:</strong> <a href="https://amzn.eu/d/fBOnWQS" target="_blank">Aqara
+                            Sensor de Puertas y Ventanas</a></p>
+                </article>
+
+                <!-- Doorbell -->
+                <article class="blueprint-card"
+                    style="border: 1px solid var(--color-border); padding: 1.5rem; border-radius: 12px; margin-bottom: 2rem; background: #fff;">
+                    <div style="display: flex; justify-content: space-between; align-items: start;">
+                        <h3 style="margin-top: 0; display: flex; align-items: center; gap: 0.5rem;">
+                            <span
+                                style="background: #f1c40f; width: 20px; height: 20px; border-radius: 50%; display: inline-block;"></span>
+                            🔔 Timbre
+                        </h3>
+                        <button class="btn btn-copy"
+                            data-copy="https://github.com/Franz-89/ha-blueprints-casa-sordos/blob/main/doorbell.yaml">🔗
+                            Blueprint</button>
+                    </div>
+                    <p><strong>Que hace:</strong> Detecta cuándo alguien toca el timbre.</p>
+                    <p><strong>Aviso:</strong> Parpadeo BLANCO CÁLIDO (30 seg) + Notificación.</p>
+                    <p><strong>Requiere:</strong> Botón inteligente o sensor de timbre.</p>
+                    <p><strong>Sugerencia de compra:</strong> <a href="https://amzn.eu/d/2lnSrDx" target="_blank">Aqara
+                            Botón Inalámbrico Individual</a></p>
+                </article>
+
+                <!-- Intercom -->
+                <article class="blueprint-card"
+                    style="border: 1px solid var(--color-border); padding: 1.5rem; border-radius: 12px; margin-bottom: 2rem; background: #fff;">
+                    <div style="display: flex; justify-content: space-between; align-items: start;">
+                        <h3 style="margin-top: 0; display: flex; align-items: center; gap: 0.5rem;">
+                            <span
+                                style="background: #f1c40f; width: 20px; height: 20px; border-radius: 50%; display: inline-block;"></span>
+                            📞 Telefonillo
+                        </h3>
+                        <button class="btn btn-copy"
+                            data-copy="https://github.com/Franz-89/ha-blueprints-casa-sordos/blob/main/intercom.yaml">🔗
+                            Blueprint</button>
+                    </div>
+                    <p><strong>Que hace:</strong> Detecta cuándo llaman al telefonillo.</p>
+                    <p><strong>Aviso:</strong> Parpadeo BLANCO FRÍO (30 seg) + Notificación.</p>
+                    <p><strong>Requiere:</strong> Sensor de vibración.</p>
+                    <p><strong>Sugerencia de compra:</strong> <a href="https://amzn.eu/d/a5Q7dvN" target="_blank">Aqara
+                            Sensor de Vibración</a></p>
+                </article>
+
+                <!-- Water leak -->
+                <article class="blueprint-card"
+                    style="border: 1px solid var(--color-border); padding: 1.5rem; border-radius: 12px; margin-bottom: 2rem; background: #fff;">
+                    <div style="display: flex; justify-content: space-between; align-items: start;">
+                        <h3 style="margin-top: 0; display: flex; align-items: center; gap: 0.5rem;">
+                            <span
+                                style="background: var(--light-blue); width: 20px; height: 20px; border-radius: 50%; display: inline-block;"></span>
+                            💧 Fuga de Agua
+                        </h3>
+                        <button class="btn btn-copy"
+                            data-copy="https://github.com/Franz-89/ha-blueprints-casa-sordos/blob/main/water_leak.yaml">🔗
+                            Blueprint</button>
+                    </div>
+                    <p><strong>Que hace:</strong> Detecta la presencia de agua en el suelo.</p>
+                    <p><strong>Aviso:</strong> Parpadeo AZUL (30 seg) + Notificación.</p>
+                    <p><strong>Requiere:</strong> Sensor de fuga de agua.</p>
+                    <p><strong>Sugerencia de compra:</strong> <a href="https://amzn.eu/d/42J3XkX" target="_blank">Aqara
+                            Sensor de Inundación</a></p>
+                </article>
+
+                <!-- Washing Machine -->
+                <article class="blueprint-card"
+                    style="border: 1px solid var(--color-border); padding: 1.5rem; border-radius: 12px; margin-bottom: 2rem; background: #fff;">
+                    <div style="display: flex; justify-content: space-between; align-items: start;">
+                        <h3 style="margin-top: 0; display: flex; align-items: center; gap: 0.5rem;">
+                            <span
+                                style="background: var(--light-green); width: 20px; height: 20px; border-radius: 50%; display: inline-block;"></span>
+                            🧺 Lavadora
+                        </h3>
+                        <button class="btn btn-copy"
+                            data-copy="https://github.com/Franz-89/ha-blueprints-casa-sordos/blob/main/washing_machine.yaml">🔗
+                            Blueprint</button>
+                    </div>
+                    <p><strong>Que hace:</strong> Detecta cuándo la lavadora empieza (por consumo eléctrico) y espera a
+                        que termine.</p>
+                    <p><strong>Aviso:</strong> Luz VERDE fija (5 min) + Notificación móvil.</p>
+                    <p><strong>Requiere:</strong> Enchufe inteligente con medición de consumo.</p>
+                    <p><strong>Sugerencia de compra:</strong> <a href="https://amzn.eu/d/eRtdWT7" target="_blank">Nous
+                            A1Z Enchufe Inteligente</a></p>
+                    <p style="font-size: 0.9rem; color: #666;">⚠️ Utilizad estrictamente este modelo, ya que los demás
+                        podrían sobrecalentarse.</p>
+                </article>
+
+                <!-- Dishwasher -->
+                <article class="blueprint-card"
+                    style="border: 1px solid var(--color-border); padding: 1.5rem; border-radius: 12px; margin-bottom: 2rem; background: #fff;">
+                    <div style="display: flex; justify-content: space-between; align-items: start;">
+                        <h3 style="margin-top: 0; display: flex; align-items: center; gap: 0.5rem;">
+                            <span
+                                style="background: var(--light-green); width: 20px; height: 20px; border-radius: 50%; display: inline-block;"></span>
+                            🍽️ Lavavajillas
+                        </h3>
+                        <button class="btn btn-copy"
+                            data-copy="https://github.com/Franz-89/ha-blueprints-casa-sordos/blob/main/dishwasher.yaml">🔗
+                            Blueprint</button>
+                    </div>
+                    <p><strong>Que hace:</strong> Detecta cuándo el lavavajillas empieza (por consumo eléctrico) y
+                        espera a que termine.</p>
+                    <p><strong>Aviso:</strong> Luz VERDE fija (5 min) + Notificación móvil.</p>
+                    <p><strong>Requiere:</strong> Enchufe inteligente con medición de consumo.</p>
+                    <p><strong>Sugerencia de compra:</strong> <a href="https://amzn.eu/d/eRtdWT7" target="_blank">Nous
+                            A1Z Enchufe Inteligente</a></p>
+                    <p style="font-size: 0.9rem; color: #666;">⚠️ Utilizad estrictamente este modelo, ya que los demás
+                        podrían sobrecalentarse.</p>
+                </article>
+
+                <!-- Baby -->
+                <article class="blueprint-card"
+                    style="border: 1px solid var(--color-border); padding: 1.5rem; border-radius: 12px; margin-bottom: 2rem; background: #fff;">
+                    <div style="display: flex; justify-content: space-between; align-items: start;">
+                        <h3 style="margin-top: 0; display: flex; align-items: center; gap: 0.5rem;">
+                            <span
+                                style="background: var(--light-violet); width: 20px; height: 20px; border-radius: 50%; display: inline-block;"></span>
+                            👶 Bebé Llorando
+                        </h3>
+                        <button class="btn btn-copy"
+                            data-copy="https://github.com/Franz-89/ha-blueprints-casa-sordos/blob/main/crying_baby.yaml">🔗
+                            Blueprint</button>
+                    </div>
+                    <p><strong>Que hace:</strong> Detecta movimiento continuo en la zona de la cuna (màs de 2 segundos).
+                    </p>
+                    <p><strong>Aviso:</strong> Parpadeo VIOLETA + Notificación móvil.</p>
+                    <p>
+                    <ul style="font-size: 0.9rem; color: #666;">
+                        <li>de 09:00 a 20:00 → 10 segundos</li>
+                        <li>de 20:00 a 09:00 → 60 segundos</li>
+                    </ul>
+                    </p>
+                    <p><strong>Requiere:</strong> Sensor de movimiento.</p>
+                    <p><strong>Sugerencia de compra:</strong> <a href="https://amzn.eu/d/ddySgRY" target="_blank">Aqara
+                            Sensor de Movimiento P1</a></p>
+                    <p style="font-size: 0.9rem; color: #666;">Actualmente no hay sensores de sonido Zigbee fiables
+                        disponibles en España, por lo que se recomienda usar un sensor de
+                        movimiento cerca de la cuna para detectar el llanto del bebé. Esta solución es estable, local y
+                        compatible con Home
+                        Assistant Green, y permite ampliaciones futuras si aparecen sensores de sonido adecuados sin
+                        cambiar las
+                        automatizaciones.</p>
+                </article>
+
+            </section>
+
+            <div style="text-align: center; margin: 3rem 0;">
+                <p>¿Quieres copia de seguridad de tu configuración? (Opcional)</p>
+                <a href="backups.html" class="btn btn-secondary">Ver Backups →</a>
+            </div>
+
+        </main>
+
+        <footer style="margin-top: 4rem; text-align: center; color: #95a5a6; font-size: 0.9rem;">
+            <p>Proyecto de vivienda accesible – España
+                <script>document.write(new Date().getFullYear());</script>
+            </p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
