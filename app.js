@@ -18,30 +18,25 @@ function initWizard() {
 
         if (!prevBtn || !nextBtn) return;
 
-        // Rendi unici gli ID se hai più wizard
         if (wizardIndex > 0) {
             prevBtn.id = `prevBtn-${wizardIndex}`;
             nextBtn.id = `nextBtn-${wizardIndex}`;
             if (stepIndicator) stepIndicator.id = `stepIndicator-${wizardIndex}`;
         }
 
-        // ✅ viewport (wrapper) che contiene gli step
         const viewport = wizard.querySelector(".wizard-viewport");
         if (!viewport) return;
 
         function setFixedViewportHeight() {
-            // Misura l'altezza reale di ogni step anche se non è "active"
-            // (con position:absolute e visibility hidden funziona bene)
             let maxH = 0;
 
             steps.forEach(step => {
-                // forza temporaneamente la misurazione in modo affidabile
                 const prevVis = step.style.visibility;
                 const prevOp = step.style.opacity;
 
                 step.style.visibility = "hidden";
-                step.style.opacity = "1"; // per evitare edge case
-                const h = step.scrollHeight; // include contenuto interno
+                step.style.opacity = "1";
+                const h = step.scrollHeight;
                 maxH = Math.max(maxH, h);
 
                 step.style.visibility = prevVis;
@@ -88,7 +83,6 @@ function initWizard() {
             }
         });
 
-        // ✅ Imposta altezza fissa: subito, dopo immagini, e su resize
         setFixedViewportHeight();
         window.addEventListener("load", setFixedViewportHeight);
         window.addEventListener("resize", setFixedViewportHeight);
