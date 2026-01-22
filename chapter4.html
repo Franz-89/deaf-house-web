@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capítulo 4 - Sensores | Guía Casa Accesible</title>
-    
+
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -35,56 +35,58 @@
 
             <div class="wizard-container">
 
-                <!-- Step 1: Add Sensor -->
-                <div class="wizard-step active">
-                    <h2>1️⃣ Añadir un sensor</h2>
-                    <p>Ejemplo: Sensor de agua, puerta o movimiento.</p>
-                    <ol>
-                        <li>En Home Assistant, ve a <strong>Ajustes → Dispositivos</strong> → <strong>Añadir
-                                dispositivo</strong>.</li>
-                        <li>Elige <strong>Zigbee</strong>.</li>
-                        <li>Mantén pulsado el botón del sensor (unos 5 segundos) hasta que parpadee una luz pequeña.
-                        </li>
-                        <li>Espera a que aparezca en pantalla.</li>
-                        <li><strong>Ponle un nombre claro</strong> (ej: "Sensor Puerta Entrada").</li>
-                    </ol>
-                </div>
+                <div class="wizard-viewport">
+                    <!-- Step 1: Add Sensor -->
+                    <div class="wizard-step active">
+                        <h2>1️⃣ Añadir un sensor</h2>
+                        <p>Ejemplo: Sensor de agua, puerta o movimiento.</p>
+                        <ol>
+                            <li>En Home Assistant, ve a <strong>Ajustes → Dispositivos</strong> → <strong>Añadir
+                                    dispositivo</strong>.</li>
+                            <li>Elige <strong>Zigbee</strong>.</li>
+                            <li>Mantén pulsado el botón del sensor (unos 5 segundos) hasta que parpadee una luz pequeña.
+                            </li>
+                            <li>Espera a que aparezca en pantalla.</li>
+                            <li><strong>Ponle un nombre claro</strong> (ej: "Sensor Puerta Entrada").</li>
+                        </ol>
+                    </div>
 
-                <!-- Step 2: Add Bulb -->
-                <div class="wizard-step">
-                    <h2>2️⃣ Añadir una bombilla 💡</h2>
-                    <ol>
-                        <li>Pon la bombilla en la lámpara.</li>
-                        <li>Enciende el interruptor.</li>
-                        <li>En Home Assistant: <strong>Añadir dispositivo → Zigbee</strong>.</li>
-                        <li>Si no sale: Apaga y enciende la bombilla 5 veces rápido para resetearla.</li>
-                        <li>Nómbrala (ej: "Luz Salón Alerta").</li>
-                    </ol>
-                    <div class="danger"><strong>Recuerda:</strong> ¡Debe ser RGB (colores)!</div>
-                </div>
+                    <!-- Step 2: Add Bulb -->
+                    <div class="wizard-step">
+                        <h2>2️⃣ Añadir una bombilla 💡</h2>
+                        <ol>
+                            <li>Pon la bombilla en la lámpara.</li>
+                            <li>Enciende el interruptor.</li>
+                            <li>En Home Assistant: <strong>Añadir dispositivo → Zigbee</strong>.</li>
+                            <li>Si no sale: Apaga y enciende la bombilla 5 veces rápido para resetearla.</li>
+                            <li>Nómbrala (ej: "Luz Salón Alerta").</li>
+                        </ol>
+                        <div class="danger"><strong>Recuerda:</strong> ¡Debe ser RGB (colores)!</div>
+                    </div>
 
-                <!-- Step 3: Verify -->
-                <div class="wizard-step">
-                    <h2>4️⃣ Prueba que todo responde</h2>
-                    <p>Antes de automatizar, comprueba:</p>
-                    <ul>
-                        <li>✅ Enciende y apaga la luz desde el móvil.</li>
-                        <li>✅ Cambia el color de la luz desde el móvil.</li>
-                        <li>✅ Abre la puerta / moja el sensor de agua y mira si cambia el estado en la pantalla.</li>
-                    </ul>
-                    <p>Si funciona, ¡estás listo para automatizar!</p>
-                </div>
+                    <!-- Step 3: Verify -->
+                    <div class="wizard-step">
+                        <h2>4️⃣ Prueba que todo responde</h2>
+                        <p>Antes de automatizar, comprueba:</p>
+                        <ul>
+                            <li>✅ Enciende y apaga la luz desde el móvil.</li>
+                            <li>✅ Cambia el color de la luz desde el móvil.</li>
+                            <li>✅ Abre la puerta / moja el sensor de agua y mira si cambia el estado en la pantalla.</li>
+                        </ul>
+                        <p>Si funciona, ¡estás listo para automatizar!</p>
+                    </div>
 
-                <!-- Step 4: Troubleshooting -->
-                <div class="wizard-step">
-                    <h2>❓ Problemas comunes</h2>
-                    <ul>
-                        <li>❌ <strong>“No aparece el sensor”</strong> → Vuelve a dejar pulsado el botón hasta que
-                            parpadee. Acércate más al cerebro.</li>
-                        <li>❌ <strong>“La luz no cambia de color”</strong> → ¿Seguro que compraste RGB?</li>
-                        <li>❌ <strong>“Va lento”</strong> → Espera unos segundos, a veces Zigbee tarda en ajustar la
-                            red.</li>
-                    </ul>
+                    <!-- Step 4: Troubleshooting -->
+                    <div class="wizard-step">
+                        <h2>❓ Problemas comunes</h2>
+                        <ul>
+                            <li>❌ <strong>“No aparece el sensor”</strong> → Vuelve a dejar pulsado el botón hasta que
+                                parpadee. Acércate más al cerebro.</li>
+                            <li>❌ <strong>“La luz no cambia de color”</strong> → ¿Seguro que compraste RGB?</li>
+                            <li>❌ <strong>“Va lento”</strong> → Espera unos segundos, a veces Zigbee tarda en ajustar la
+                                red.</li>
+                        </ul>
+                    </div>
                 </div>
 
                 <!-- Controls -->
@@ -96,15 +98,13 @@
             </div>
 
             <div style="text-align: center; margin-top: 2rem;">
-                <a href="chapter5.html" class="btn">Siguiente: ¡A automatizar! →</a>
+                <a href="chapter5.html" class="btn btn-secondary">Siguiente: ¡A automatizar! →</a>
             </div>
 
         </main>
 
         <footer style="margin-top: 4rem; text-align: center; color: #95a5a6; font-size: 0.9rem;">
-            <p>Proyecto de vivienda accesible – España
-                <script>document.write(new Date().getFullYear());</script>
-            </p>
+            <p>Proyecto de vivienda accesible – España <script>document.write(new Date().getFullYear());</script></p>
         </footer>
     </div>
 

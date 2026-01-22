@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capítulo 3 - Instalación | Guía Casa Accesible</title>
-    
+
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -34,70 +34,72 @@
             </header>
 
             <div class="wizard-container">
-                <!-- Step 0: Material -->
-                <div class="wizard-step active">
-                    <h2>🔧 Material Necesario</h2>
-                    <ul>
-                        <li>1. Home Assistant Green</li>
-                        <li>2. Adaptador Zigbee</li>
-                        <li>3. Cable Ethernet</li>
-                        <li>4. Cable de alimentación</li>
-                    </ul>
-                    <p>Ten todo preparado encima de la mesa antes de empezar.</p>
-                </div>
-
-                <!-- Step 1: Connections -->
-                <div class="wizard-step">
-                    <h2>🟢 Conectar</h2>
-                    <ol>
-                        <li>Conecta el <strong>cable Ethernet</strong> del router al Home Assistant Green.</li>
-                        <li>Conecta el <strong>cable de alimentación</strong> a la corriente.</li>
-                        <li>Espera 2–3 minutos hasta que arranque.</li>
-                    </ol>
-                    <div class="info">👉 No hay botones de encendido. Se enciende solo al enchufarlo.</div>
-                </div>
-
-                <!-- Step 2: First Login -->
-                <div class="wizard-step">
-                    <h2>🌐 Entrar por primera vez</h2>
-                    <p>En tu ordenador o móvil (conectado al mismo WiFi), abre la App o el navegador (solo Safari, el
-                        resto de navegadores no funcionaràn) y escribe:</p>
-
-                    <div
-                        style="background: #eee; padding: 1rem; text-align: center; border-radius: 8px; margin: 1rem 0;">
-                        <a href="http://homeassistant.local:8123" target="_blank">http://homeassistant.local:8123</a>
+                <div class="wizard-viewport">
+                    <!-- Step 0: Material -->
+                    <div class="wizard-step active">
+                        <h2>🔧 Material Necesario</h2>
+                        <ul>
+                            <li>1. Home Assistant Green</li>
+                            <li>2. Adaptador Zigbee</li>
+                            <li>3. Cable Ethernet</li>
+                            <li>4. Cable de alimentación</li>
+                        </ul>
+                        <p>Ten todo preparado encima de la mesa antes de empezar.</p>
                     </div>
 
-                    <ol>
-                        <li>Aparecerá la pantalla de bienvenida.</li>
-                        <li>Crea un <strong>Usuario</strong> y <strong>Contraseña</strong> (¡apúntalo!).</li>
-                        <li>Elige Idioma: <strong>Español</strong> y País: <strong>España</strong>.</li>
-                        <li>Dale a "Siguiente" hasta terminar.</li>
-                    </ol>
-                </div>
+                    <!-- Step 1: Connections -->
+                    <div class="wizard-step">
+                        <h2>🟢 Conectar</h2>
+                        <ol>
+                            <li>Conecta el <strong>cable Ethernet</strong> del router al Home Assistant Green.</li>
+                            <li>Conecta el <strong>cable de alimentación</strong> a la corriente.</li>
+                            <li>Espera 2–3 minutos hasta que arranque.</li>
+                        </ol>
+                        <div class="info">👉 No hay botones de encendido. Se enciende solo al enchufarlo.</div>
+                    </div>
 
-                <!-- Step 3: Zigbee Physical -->
-                <div class="wizard-step">
-                    <h2>🔌 El adaptador Zigbee</h2>
-                    <ol>
-                        <li>Coge el dongle Zigbee.</li>
-                        <li>Insértalo en uno de los puertos USB del Home Assistant Green.</li>
-                        <li>Espera 30 segundos.</li>
-                    </ol>
-                </div>
+                    <!-- Step 2: First Login -->
+                    <div class="wizard-step">
+                        <h2>🌐 Entrar por primera vez</h2>
+                        <p>En tu ordenador o móvil (conectado al mismo WiFi), abre la App o el navegador (solo Safari, el
+                            resto de navegadores no funcionaràn) y escribe:</p>
 
-                <!-- Step 4: Zigbee Software -->
-                <div class="wizard-step">
-                    <h2>🧩 Instalar Zigbee</h2>
-                    <p>Vuelve a la pantalla del ordenador/móvil:</p>
-                    <ol>
-                        <li>Ve a <strong>⚙️ Ajustes</strong> → <strong>Dispositivos y servicios</strong>.</li>
-                        <li>Deberías ver un cuadro nuevo que dice "Discovered" (Connect ZBT-2).</li>
-                        <li>Pulsa <strong>Añadir</strong> (Configure).</li>
-                        <li>Si pregunta, elige: <strong>"Use as Zigbee adapter"</strong>.</li>
-                        <li>Si pregunta tipo de instalación: <strong>"Recommended installation" (ZHA)</strong>.</li>
-                    </ol>
-                    <div class="success">✅ ¡Listo! Tu casa ya tiene cerebro y antenas.</div>
+                        <div
+                            style="background: #eee; padding: 1rem; text-align: center; border-radius: 8px; margin: 1rem 0;">
+                            <a href="http://homeassistant.local:8123" target="_blank">http://homeassistant.local:8123</a>
+                        </div>
+
+                        <ol>
+                            <li>Aparecerá la pantalla de bienvenida.</li>
+                            <li>Crea un <strong>Usuario</strong> y <strong>Contraseña</strong> (¡apúntalo!).</li>
+                            <li>Elige Idioma: <strong>Español</strong> y País: <strong>España</strong>.</li>
+                            <li>Dale a "Siguiente" hasta terminar.</li>
+                        </ol>
+                    </div>
+
+                    <!-- Step 3: Zigbee Physical -->
+                    <div class="wizard-step">
+                        <h2>🔌 El adaptador Zigbee</h2>
+                        <ol>
+                            <li>Coge el dongle Zigbee.</li>
+                            <li>Insértalo en uno de los puertos USB del Home Assistant Green.</li>
+                            <li>Espera 30 segundos.</li>
+                        </ol>
+                    </div>
+
+                    <!-- Step 4: Zigbee Software -->
+                    <div class="wizard-step">
+                        <h2>🧩 Instalar Zigbee</h2>
+                        <p>Vuelve a la pantalla del ordenador/móvil:</p>
+                        <ol>
+                            <li>Ve a <strong>⚙️ Ajustes</strong> → <strong>Dispositivos y servicios</strong>.</li>
+                            <li>Deberías ver un cuadro nuevo que dice "Discovered" (Connect ZBT-2).</li>
+                            <li>Pulsa <strong>Añadir</strong> (Configure).</li>
+                            <li>Si pregunta, elige: <strong>"Use as Zigbee adapter"</strong>.</li>
+                            <li>Si pregunta tipo de instalación: <strong>"Recommended installation" (ZHA)</strong>.</li>
+                        </ol>
+                        <div class="success">✅ ¡Listo! Tu casa ya tiene cerebro y antenas.</div>
+                    </div>
                 </div>
 
                 <!-- Backup step removed - moved to backups.html -->
@@ -117,9 +119,7 @@
         </main>
 
         <footer style="margin-top: 4rem; text-align: center; color: #95a5a6; font-size: 0.9rem;">
-            <p>Proyecto de vivienda accesible – España
-                <script>document.write(new Date().getFullYear());</script>
-            </p>
+            <p>Proyecto de vivienda accesible – España <script>document.write(new Date().getFullYear());</script></p>
         </footer>
     </div>
 

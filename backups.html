@@ -55,58 +55,58 @@
                 <h2>🅰️ Opción A: MicroSD Local (Recomendado)</h2>
 
                 <h3>✅ Qué microSD comprar</h3>
-                <div class="wizard-step" style="display:block">
-                    <p><strong>Recomendación segura:</strong> <a href="https://amzn.eu/d/bM702ZF" target="_blank">Sandisk Extreme U3 64Gb</a></p>
-                    <p>Es más duradera, tiene menor riesgo de corrupción y es ideal para dispositivos siempre encendidos.</p>
-                </div>
+                <p><strong>Recomendación segura:</strong> <a href="https://amzn.eu/d/bM702ZF" target="_blank">Sandisk Extreme U3 64Gb</a></p>
+                <p>Es más duradera, tiene menor riesgo de corrupción y es ideal para dispositivos siempre encendidos.</p>
 
                 <div class="wizard-container">
                 
-                    <!-- Step 1: Insert microSD -->
-                    <div class="wizard-step active">
-                        <h2>Insertar la microSD</h2>
-                        <ol>
-                            <li>Apaga Home Assistant correctamente:
-                                <strong>⚙️ Ajustes → Sistema → Apagar</strong>.
-                            </li>
-                            <li>Inserta la <strong>tarjeta microSD</strong> en la ranura del Home Assistant Green.</li>
-                            <li>Vuelve a conectar el cable de alimentación.</li>
-                            <li>Espera <strong>2–3 minutos</strong> hasta que arranque.</li>
-                        </ol>
-                        <div class="danger">⚠️ Nunca insertes o retires la microSD con el sistema encendido.</div>
-                    </div>
-                
-                    <!-- Step 2: Prepare microSD -->
-                    <div class="wizard-step">
-                        <h2>Preparar la microSD (solo la primera vez)</h2>
-                        <ol>
-                            <li>Entra en <strong>⚙️ Ajustes → Sistema → Almacenamiento</strong>.</li>
-                            <li>Busca <strong>“Almacenamiento externo (microSD)”</strong>.</li>
-                            <li>Si aparece como <em>no preparada</em>, pulsa
-                                <strong>Formatear / Montar</strong> y acepta.
-                            </li>
-                        </ol>
-                        <div class="warning">⚠️ Se borrará cualquier contenido previo de la tarjeta.</div>
-                    </div>
-                
-                    <!-- Step 3: Automatic backups -->
-                    <div class="wizard-step">
-                        <h2>Activar copias de seguridad automáticas</h2>
-                        <ol>
-                            <li>Ve a <strong>⚙️ Ajustes → Sistema → Copias de seguridad</strong>.</li>
-                            <li>Pulsa <strong>Configuración</strong> y activa:
-                                <ul>
-                                    <li>Copias automáticas</li>
-                                    <li>Frecuencia: <strong>Diaria</strong></li>
-                                    <li>Tipo: <strong>Copia completa</strong></li>
-                                    <li>Mantener: <strong>7 copias</strong></li>
-                                </ul>
-                            </li>
-                            <li>Crea una copia manual de prueba:
-                                <strong>➕ Crear copia de seguridad → Copia completa</strong>.
-                            </li>
-                        </ol>
-                        <div class="success">✅ Si termina sin errores, las copias están funcionando correctamente.</div>
+                    <div class="wizard-viewport">
+                        <!-- Step 1: Insert microSD -->
+                        <div class="wizard-step active">
+                            <h2>Insertar la microSD</h2>
+                            <ol>
+                                <li>Apaga Home Assistant correctamente:
+                                    <strong>⚙️ Ajustes → Sistema → Apagar</strong>.
+                                </li>
+                                <li>Inserta la <strong>tarjeta microSD</strong> en la ranura del Home Assistant Green.</li>
+                                <li>Vuelve a conectar el cable de alimentación.</li>
+                                <li>Espera <strong>2–3 minutos</strong> hasta que arranque.</li>
+                            </ol>
+                            <div class="danger">⚠️ Nunca insertes o retires la microSD con el sistema encendido.</div>
+                        </div>
+                    
+                        <!-- Step 2: Prepare microSD -->
+                        <div class="wizard-step">
+                            <h2>Preparar la microSD (solo la primera vez)</h2>
+                            <ol>
+                                <li>Entra en <strong>⚙️ Ajustes → Sistema → Almacenamiento</strong>.</li>
+                                <li>Busca <strong>“Almacenamiento externo (microSD)”</strong>.</li>
+                                <li>Si aparece como <em>no preparada</em>, pulsa
+                                    <strong>Formatear / Montar</strong> y acepta.
+                                </li>
+                            </ol>
+                            <div class="warning">⚠️ Se borrará cualquier contenido previo de la tarjeta.</div>
+                        </div>
+                    
+                        <!-- Step 3: Automatic backups -->
+                        <div class="wizard-step">
+                            <h2>Activar copias de seguridad automáticas</h2>
+                            <ol>
+                                <li>Ve a <strong>⚙️ Ajustes → Sistema → Copias de seguridad</strong>.</li>
+                                <li>Pulsa <strong>Configuración</strong> y activa:
+                                    <ul>
+                                        <li>Copias automáticas</li>
+                                        <li>Frecuencia: <strong>Diaria</strong></li>
+                                        <li>Tipo: <strong>Copia completa</strong></li>
+                                        <li>Mantener: <strong>7 copias</strong></li>
+                                    </ul>
+                                </li>
+                                <li>Crea una copia manual de prueba:
+                                    <strong>➕ Crear copia de seguridad → Copia completa</strong>.
+                                </li>
+                            </ol>
+                            <div class="success">✅ Si termina sin errores, las copias están funcionando correctamente.</div>
+                        </div>
                     </div>
                 
                     <!-- Controls -->
@@ -136,80 +136,82 @@
 
                 <div class="wizard-container">
                 
-                    <!-- Step 1: Requirements -->
-                    <div class="wizard-step active">
-                        <h2>Comprobar requisitos</h2>
-                        <ol>
-                            <li>En Home Assistant entra en <strong>⚙️ Ajustes → Complementos</strong>.</li>
-                            <li>Si ves <strong>“Tienda de complementos”</strong>, puedes continuar.</li>
-                        </ol>
-                        <div class="info">👉 Si no ves la tienda, tu instalación no es Home Assistant OS.</div>
-                    </div>
-                
-                    <!-- Step 2: Install addon -->
-                    <div class="wizard-step">
-                        <h2>Instalar el complemento</h2>
-                
-                        <ol>
-                            <li>Entra en <strong>Tienda de complementos</strong>.</li>
-                            <li>Busca <strong>Google Drive Backup</strong>.</li>
-                            <li>Pulsa <strong>Instalar</strong>.</li>
-                        </ol>
-
-                        <div class="info">
-                            👉 Si no encuentras <strong>Google Drive Backup</strong> en la tienda, añade primero el repositorio:
-                        
+                    <div class="wizard-viewport">
+                        <!-- Step 1: Requirements -->
+                        <div class="wizard-step active">
+                            <h2>Comprobar requisitos</h2>
                             <ol>
-                                <li>Entra en <strong>Tienda de complementos</strong> y pulsa los tres puntos (⋮).</li>
-                                <li>Elige <strong>Añadir repositorio</strong>.</li>
-                                <li>Introduce <strong>https://github.com/sabeechen/hassio-google-drive-backup</strong>.</li>
-                                <li>Vuelve a la tienda y busca de nuevo el complemento.</li>
+                                <li>En Home Assistant entra en <strong>⚙️ Ajustes → Complementos</strong>.</li>
+                                <li>Si ves <strong>“Tienda de complementos”</strong>, puedes continuar.</li>
+                            </ol>
+                            <div class="info">👉 Si no ves la tienda, tu instalación no es Home Assistant OS.</div>
+                        </div>
+                    
+                        <!-- Step 2: Install addon -->
+                        <div class="wizard-step">
+                            <h2>Instalar el complemento</h2>
+                    
+                            <ol>
+                                <li>Entra en <strong>Tienda de complementos</strong>.</li>
+                                <li>Busca <strong>Google Drive Backup</strong>.</li>
+                                <li>Pulsa <strong>Instalar</strong>.</li>
+                            </ol>
+
+                            <div class="info">
+                                👉 Si no encuentras <strong>Google Drive Backup</strong> en la tienda, añade primero el repositorio:
+                            
+                                <ol>
+                                    <li>Entra en <strong>Tienda de complementos</strong> y pulsa los tres puntos (⋮).</li>
+                                    <li>Elige <strong>Añadir repositorio</strong>.</li>
+                                    <li>Introduce <strong>https://github.com/sabeechen/hassio-google-drive-backup</strong>.</li>
+                                    <li>Vuelve a la tienda y busca de nuevo el complemento.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    
+                        <!-- Step 3: Basic configuration -->
+                        <div class="wizard-step">
+                            <h2>Configuración básica</h2>
+                            <ol>
+                                <li>Entra en el complemento recién instalado.</li>
+                                <li>Activa:
+                                    <ul>
+                                        <li><strong>Iniciar al arrancar</strong></li>
+                                        <li><strong>Watchdog</strong></li>
+                                    </ul>
+                                </li>
+                                <li>Pulsa <strong>Iniciar</strong>.</li>
                             </ol>
                         </div>
-                    </div>
-                
-                    <!-- Step 3: Basic configuration -->
-                    <div class="wizard-step">
-                        <h2>Configuración básica</h2>
-                        <ol>
-                            <li>Entra en el complemento recién instalado.</li>
-                            <li>Activa:
-                                <ul>
-                                    <li><strong>Iniciar al arrancar</strong></li>
-                                    <li><strong>Watchdog</strong></li>
-                                </ul>
-                            </li>
-                            <li>Pulsa <strong>Iniciar</strong>.</li>
-                        </ol>
-                    </div>
-                
-                    <!-- Step 4: Google account -->
-                    <div class="wizard-step">
-                        <h2>Conectar tu cuenta de Google</h2>
-                        <ol>
-                            <li>Dentro del complemento, pulsa <strong>Web UI</strong>.</li>
-                            <li>Inicia sesión con tu <strong>cuenta de Google</strong>.</li>
-                            <li>Acepta los permisos solicitados.</li>
-                        </ol>
-                        <div class="info">👉 Las copias se guardan en una carpeta privada de tu Google Drive.</div>
-                    </div>
-                
-                    <!-- Step 5: Configure & test -->
-                    <div class="wizard-step">
-                        <h2>Configurar y probar</h2>
-                        <ol>
-                            <li>Configura:
-                                <ul>
-                                    <li>Frecuencia: <strong>Diaria</strong></li>
-                                    <li>Tipo: <strong>Copia completa</strong></li>
-                                </ul>
-                            </li>
-                            <li>Pulsa <strong>Guardar</strong>.</li>
-                            <li>Crea una copia manual desde Home Assistant.</li>
-                            <li>Verifica que aparece como <strong>“Uploaded”</strong> en el complemento.</li>
-                            <li>Comprueba que la copia está en tu <strong>Google Drive</strong>.</li>
-                        </ol>
-                        <div class="success">✅ Copias en la nube funcionando correctamente.</div>
+                    
+                        <!-- Step 4: Google account -->
+                        <div class="wizard-step">
+                            <h2>Conectar tu cuenta de Google</h2>
+                            <ol>
+                                <li>Dentro del complemento, pulsa <strong>Web UI</strong>.</li>
+                                <li>Inicia sesión con tu <strong>cuenta de Google</strong>.</li>
+                                <li>Acepta los permisos solicitados.</li>
+                            </ol>
+                            <div class="info">👉 Las copias se guardan en una carpeta privada de tu Google Drive.</div>
+                        </div>
+                    
+                        <!-- Step 5: Configure & test -->
+                        <div class="wizard-step">
+                            <h2>Configurar y probar</h2>
+                            <ol>
+                                <li>Configura:
+                                    <ul>
+                                        <li>Frecuencia: <strong>Diaria</strong></li>
+                                        <li>Tipo: <strong>Copia completa</strong></li>
+                                    </ul>
+                                </li>
+                                <li>Pulsa <strong>Guardar</strong>.</li>
+                                <li>Crea una copia manual desde Home Assistant.</li>
+                                <li>Verifica que aparece como <strong>“Uploaded”</strong> en el complemento.</li>
+                                <li>Comprueba que la copia está en tu <strong>Google Drive</strong>.</li>
+                            </ol>
+                            <div class="success">✅ Copias en la nube funcionando correctamente.</div>
+                        </div>
                     </div>
                 
                     <!-- Controls -->
@@ -235,14 +237,12 @@
 
             <div style="text-align: center; margin: 3rem 0;">
                 <p>¿Quieres controlar la casa desde fuera? (Opcional)</p>
-                <a href="nabu.html" class="btn btn-secondary">Ver Nabu Casa →</a>
+                <a href="nabu.html" class="btn">☁️ Nabu Casa →</a>
             </div>
         </main>
 
         <footer style="margin-top: 4rem; text-align: center; color: #95a5a6; font-size: 0.9rem;">
-            <p>Proyecto de vivienda accesible – España
-                <script>document.write(new Date().getFullYear());</script>
-            </p>
+            <p>Proyecto de vivienda accesible – España <script>document.write(new Date().getFullYear());</script></p>
         </footer>
     </div>
 

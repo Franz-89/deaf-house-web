@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
     initCopyButtons();
 });
 
-// Wizard Logic
 function initWizard() {
     const wizards = document.querySelectorAll(".wizard-container");
 
@@ -13,47 +12,65 @@ function initWizard() {
 
         let currentStep = 0;
 
-        // ✅ Scope controls to THIS wizard (not the whole document)
         const prevBtn = wizard.querySelector("#prevBtn");
         const nextBtn = wizard.querySelector("#nextBtn");
         const stepIndicator = wizard.querySelector("#stepIndicator");
 
-        // If your controls are inside the wizard, these should exist
         if (!prevBtn || !nextBtn) return;
 
-        // Optional: avoid duplicate IDs on the same page by converting them to data attributes
-        // If you *must* keep IDs, at least make them unique per wizard:
-        // (This will let querySelector("#prevBtn") still work inside wizard)
+        // Rendi unici gli ID se hai più wizard
         if (wizardIndex > 0) {
             prevBtn.id = `prevBtn-${wizardIndex}`;
             nextBtn.id = `nextBtn-${wizardIndex}`;
             if (stepIndicator) stepIndicator.id = `stepIndicator-${wizardIndex}`;
         }
 
+        // ✅ viewport (wrapper) che contiene gli step
+        const viewport = wizard.querySelector(".wizard-viewport");
+        if (!viewport) return;
+
+        function setFixedViewportHeight() {
+            // Misura l'altezza reale di ogni step anche se non è "active"
+            // (con position:absolute e visibility hidden funziona bene)
+            let maxH = 0;
+
+            steps.forEach(step => {
+                // forza temporaneamente la misurazione in modo affidabile
+                const prevVis = step.style.visibility;
+                const prevOp = step.style.opacity;
+
+                step.style.visibility = "hidden";
+                step.style.opacity = "1"; // per evitare edge case
+                const h = step.scrollHeight; // include contenuto interno
+                maxH = Math.max(maxH, h);
+
+                step.style.visibility = prevVis;
+                step.style.opacity = prevOp;
+            });
+
+            viewport.style.height = `${maxH}px`;
+        }
+
         function updateStep() {
-            // Show only the current step
             steps.forEach((step, index) => {
                 step.classList.toggle("active", index === currentStep);
             });
 
-            // Buttons
             prevBtn.style.display = currentStep === 0 ? "none" : "inline-block";
 
             if (currentStep === steps.length - 1) {
                 nextBtn.textContent = "Finalizar";
-                nextBtn.style.display = "none"; // or keep it visible if you want a "Finish" action
+                nextBtn.style.display = "none";
             } else {
                 nextBtn.textContent = "Siguiente →";
                 nextBtn.style.display = "inline-block";
             }
 
-            // Indicator
             if (stepIndicator) {
                 stepIndicator.textContent = `Paso ${currentStep + 1} de ${steps.length}`;
             }
         }
 
-        // Remove any previous listeners (safety if initWizard() can be called multiple times)
         prevBtn.onclick = null;
         nextBtn.onclick = null;
 
@@ -71,9 +88,15 @@ function initWizard() {
             }
         });
 
+        // ✅ Imposta altezza fissa: subito, dopo immagini, e su resize
+        setFixedViewportHeight();
+        window.addEventListener("load", setFixedViewportHeight);
+        window.addEventListener("resize", setFixedViewportHeight);
+
         updateStep();
     });
 }
+  
   
 
 // Copy to Clipboard Logic
